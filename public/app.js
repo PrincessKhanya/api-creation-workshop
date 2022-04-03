@@ -10,6 +10,8 @@ const showPriceRangeElem = document.querySelector('.showPriceRange');
 const garmentsTemplateText = document.querySelector('.garmentListTemplate');
 const garmentsTemplate = Handlebars.compile(garmentsTemplateText.innerHTML);
 
+
+
 seasonOptions.addEventListener('click', function(evt){
 	seasonFilter = evt.target.value;
 	filterData();
@@ -41,5 +43,7 @@ priceRangeElem.addEventListener('change', function(evt){
 			})
 		});
 });
+
+
 
 filterData();
