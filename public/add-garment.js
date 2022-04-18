@@ -11,7 +11,7 @@ function showMessage(value){
 	setTimeout(() =>  {
 		message.innerHTML = '';
 		message.classList.toggle('hidden');
-	}, 3000);
+	}, 7000);
 }
 
 function toggleAddGarmetScreen() {

@@ -47,3 +47,21 @@ priceRangeElem.addEventListener('change', function(evt){
 
 
 filterData();
+
+// const domFields = {
+// 	description,
+// 	image,
+// 	gender,
+// 	season,
+// 	price
+//   };
+  
+//   axios.post('/api/garments', domFields)
+// 	.then((result) => {
+// 		// show snackbar - with success message
+// 		showMessage(result.data.message);
+// 		console.log(result.data);
+// 	})
+// 	.catch(err => {
+// 	  console.log(err);
+// 	});

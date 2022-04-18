@@ -54,13 +54,13 @@ app.get('/api/garments/price/:price', function(req, res){
 	});
 });
 
-let values = {
-	"description": "Rainbow unicorn sweater",
-	"price": 799.00,
-	"img": "placeholder.png",
-	"gender": "Unisex",
-	"season": "All season"
-}
+// let values = {
+// 	"description": "Rainbow unicorn sweater",
+// 	"price": 799.00,
+// 	"img": "placeholder.png",
+// 	"gender": "Unisex",
+// 	"season": "All season"
+// }
 
 app.post('/api/garments', (req, res) => {
 
@@ -86,10 +86,10 @@ app.post('/api/garments', (req, res) => {
 
 		//you can check for duplicates here using garments.find
 		
-		function isAdult(member) {
-			return member.description==values.description, member.img==values.img
+		function isGarmente(member) {
+			return member.description==req.body.description, member.img==req.body.img
 		}
-		let duplicate=garments.find(isAdult);
+		let duplicate=garments.find(isGarmente);
 
 		if (duplicate == undefined) {
 			//add a new entry into the garments list
@@ -104,13 +104,13 @@ app.post('/api/garments', (req, res) => {
 			res.json({
 				status: 'success',
 				message: 'New garment added.',
-				duplicate: duplicate,
+				
 			});
 		} else {
 			res.json({
 				status: 'error',
-				message: 'Required data supplied exists',
-				duplicate: duplicate,
+				message: 'Supplied data already exists',
+				
 			});	
 		}
 	}
