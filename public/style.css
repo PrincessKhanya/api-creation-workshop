@@ -31,32 +31,32 @@ img {
 	margin: 0.25em;
 	border-radius: 0.5em;
 }
-
+/*
 .message {
 	visibility: hidden;
-	/* Hidden by default. Visible on click */
+	/* Hidden by default. Visible on click 
 	min-width: 250px;
-	/* Set a default minimum width */
+	/* Set a default minimum width 
 	margin-left: -125px;
-	/* Divide value of min-width by 2 */
+	/* Divide value of min-width by 2 
 	background-color: #333;
-	/* Black background color */
+	/* Black background color 
 	color: #fff;
-	/* White text color */
+	/* White text color 
 	text-align: center;
-	/* Centered text */
+	/* Centered text 
 	border-radius: 2px;
-	/* Rounded borders */
+	/* Rounded borders 
 	padding: 16px;
-	/* Padding */
+	/* Padding 
 	position: fixed;
-	/* Sit on top of the screen */
+	/* Sit on top of the screen
 	z-index: 1;
-	/* Add a z-index if needed */
+	/* Add a z-index if needed 
 	left: 50%;
-	/* Center the snackbar */
+	/* Center the snackbar 
 	bottom: 30px;
-	/* 30px from the bottom */
+	/* 30px from the bottom 
 
 }
 /*
